@@ -1,7 +1,7 @@
 'use strict';
 
 // npm init to create package.json file
-// install gulp and gulp-concat. gulp needs to be installed locally as a dev dependency, and also globally
+// don't forget to install gulp as a dev dependency for this project, and also globally
 
 var   gulp = require('gulp'),
     concat = require('gulp-concat'),
@@ -56,6 +56,3 @@ gulp.task("build", ['compileSass', 'concatIndex', 'concatAbout', 'concatContact'
 
 gulp.task("default", ["watch"]);
 
-// gulp.task('watchSass', function() {
- // gulp.watch('scss/**/*.scss', ['compileSass']);
-// })
